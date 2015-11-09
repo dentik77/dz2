@@ -25,10 +25,10 @@
 	@include absolute-center;
 }
 $socials: fb, vk, tw;
-$socials-map: sprite-map('icons/socials/*.png'), $spacing: 70px;
+$socials-map: sprite-map('icons/socials/*.png', $spacing: 70px);
 
 @each $social in $socials {
-	.socials__item_#($social) {
+	.socials__item_#{$social} {
 		.socials__icon {
 			@include get-sprite($socials-map, $social);
 		}
@@ -97,4 +97,33 @@ $socials-map: sprite-map('icons/socials/*.png'), $spacing: 70px;
 	color: $black;
 	@include open-sans(semibold);
 	text-decoration: none;
+
+	&:hover {
+		color: $orange;
+	}
+}
+.menu__item {
+	@include inlineblock();
+	margin-left: 20px;
+
+	&:first-child {
+		margin-left: 0;
+	}
+}
+.search__form-input {
+	border: 1px solid #deele4;
+	@include border-radius(5px);
+	padding: 8px 15px;
+	width: 259px;
+	margin-right: -7px;
+}
+.search__form-submit {
+	width: 70px;
+	height: 36px;
+	background: $orange;
+	color: #ffffff;
+	@include open-sans(semibold);
+	border: 0 none;
+	@include border-radius(0 5px 5px 0);
+	border: 1px solid $orange;
 }
