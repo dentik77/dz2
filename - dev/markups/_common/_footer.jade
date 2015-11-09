@@ -1,0 +1,37 @@
+footer.footer
+	.footer__top
+		.container
+			.footer__left
+				a(href="#").logo.logo-footer
+				img(src="" alt="cooltech logo").logo__img
+				.logo__text coltech
+			.footer__right
+			ul.socials.footer_socials
+			- var icons = ['fb', 'vk', 'tw']
+			each icon in icons
+				li(class="socials__item_" + icon)
+					a(href="#").socials__link
+					ul.footer__nav
+						- var items = ["Планшеты", "Мобильные телефоны", "Мр3 плееры", "Персональные компьютеры", "Аксессуары", "Бытовая техника",]
+						each item in items
+							li.footer__nav-item
+					a(href="#").footer__nav-link= item
+					.footer__bottom
+						.container
+							.footer__copyright
+	.wraper1
+		ul.container1
+			li.container1-item
+				ul.content1
+					li.content1-left
+						| jdcvdiugvb
+					li.content1-rigt
+						| 23543
+			li.container1-item
+			li.container1-item
+			li.container1-item
+			li.container1-item
+			li.container1-item
+			li.container1-item
+			li.container1-item
+			li.container1-item

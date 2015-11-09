@@ -1,0 +1,26 @@
+@import "compass";
+
+/* --------- normalize --------- */
+
+@import "_misc/normalize";
+
+/* ---------- fonts ------------ */
+@import "_misc/_fonts.scss";
+
+/* --------- mixins --------- */
+
+@import "_misc/mixins";
+
+/* --------- adjustment --------- */
+
+@import "_misc/adjustment";
+/* -------- misc icons sprite ------------ */
+$misc-sprite: sprite-map('icons/_misc/*.png', $spacing: 70px;);
+
+/*---------- common colors -----------*/
+$black: #333333;
+$orange: #ff6600;
+
+/* ---------- section --------- */
+@import "_sections/_header.scss";
+
