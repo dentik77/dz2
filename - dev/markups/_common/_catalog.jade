@@ -3,5 +3,5 @@
 		ul.catalog__list
 			- var items = ["Главная", "Каталог"]
 				each item in items
-					li(class="catalog__item" + ((item == "Каталог") ? 'active' : ''))
+					li(class="catalog__item" + ((item == "Каталог") ? ' active' : ''))
 						a(href="#").catalog__link= item

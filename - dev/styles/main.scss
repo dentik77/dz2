@@ -24,8 +24,16 @@ $misc-sprite: sprite-map('icons/_misc/*.png', $spacing: 70px);
 
 $black: #333333;
 $orange: #ff6600;
+$grey: #e4ebee;
 
 /* ---------- section --------- */
 
 @import "_sections/_header.scss";
 
+@import "_sections/_nav.scss";
+
+@import "_sections/_catalog.scss";
+
+@import "_sections/_content.scss";
+
+@import "_sections/_sidebar.scss";

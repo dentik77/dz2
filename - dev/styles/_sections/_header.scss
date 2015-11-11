@@ -42,7 +42,7 @@ $socials-map: sprite-map('icons/socials/*.png', $spacing: 70px);
 	width: 50%;
 	float: right;
 }
-.adress {
+.address {
 	@include inlineblock(middle);
 	margin-right: 65px;
 	&:before {
