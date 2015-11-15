@@ -12,11 +12,30 @@ block content
 				include ../_common/_sidebar
 				.content
 					.sort
-						.products
+						.sort__left
+							.sort__select-wrap
+								.sort__title
+									| Сортировать по
+								.sort__select
+									select.sort__select-elem
+										- var opsions = ["по цене", "по популярности"]
+										each option in options
+											option(value="")= option
+						.sort__right
+							.sort__title
+								| Вид каталога
+							.sort__view
+								ul.sort__view-lists
+									- var items['rows', 'grids', 'lines']
+									each items in item
+										li(class="sort__view-item sort_view-" + item data-view= item)
+											a(href="#").sort__view-link
+												.sort__view-icon
+				.products
 			.attension
 				.main-title
 					| Важная информация
-				.attension_text
+				.attension__text
 					p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates autem ipsam consectetur voluptatibus libero saepe temporibus soluta nemo, et dolore maiores! Voluptates laborum maxime, unde repellat repudiandae, dolorum repellendus sit.
 					p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates autem ipsam consectetur voluptatibus libero saepe temporibus soluta nemo, et dolore maiores! Voluptates laborum maxime, unde repellat repudiandae, dolorum repellendus sit.
 					p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates autem ipsam consectetur voluptatibus libero saepe temporibus soluta nemo, et dolore maiores! Voluptates laborum maxime, unde repellat repudiandae, dolorum repellendus sit.
