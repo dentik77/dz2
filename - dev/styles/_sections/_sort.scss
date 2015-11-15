@@ -11,8 +11,9 @@
 	color: #5d656c;
 	@include inlineblock(middle);
 	margin-right: 11px;
+	 padding: 18px;
 }
-.sort_select {
+.sort__select {
 	@include inlineblock(middle);
 }
 .sort__left {
@@ -23,4 +24,42 @@
 	float: right;
 	width: 50%;
 	text-align: right;
+}
+.sort__view {
+	@include inlineblock(middle);
+}
+.sort__view-lists {
+	@include clearfix;
+}
+.sort__view-item {
+	float: left;
+	border-left: 1px solid $grey;
+}
+.sort__view-link {
+	width: 50px;
+	height: 50px;
+	position: relative;
+	display: block;
+	outline: none !important;
+}
+.sort__view-icon {
+	@include absolute-center;
+}
+
+$views-map: sprite-map('icons/views/*.png', $spacing: 70px);
+$items: rows, grids, lines;
+
+@each $item in $items {
+	.sort__view_#{$item} {
+		.sort__view-icon {
+			@include get-sprite($views-map, $item);
+		}
+		&:hover {
+			$hover-icon: $item + '-hover';
+
+			.sort__view-icon {
+				@include get-sprite($views-map, $hover-icon);
+			}
+		}
+	}
 }
