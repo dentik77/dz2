@@ -40,22 +40,22 @@ block content
 											.products__slideshow
 												.products__slideshow-block
 													a(href="#").products__slideshow-display
-														img(src="http://lorempixel.com/200/200/technics/6" alt="")
+														img(src="http://lorempixel.com/200/200/technics/6" alt="").products__slideshow-img
 													ul.products__slideshow-thumbs
 														- for (var j=0; j < 3; j++)
-															li.products_slideshow-item
+															li.products__slideshow-item
 																a(href="#").products__slideshow-link
-																	img(src="http://lorempixel.com/45/45/technics/" +j alt="")
+																	img(src="http://lorempixel.com/45/45/technics/" +j alt="").products__slideshow-thumbs-img
 												.products__article
 													.products__article-word Артикул
 													.products__article-num 189238
 											.products__desc
 												.products__desc-title Samsung GT-I9301I GALAXY S 3   Смартфон Samsung GT-I9301I GALAX
 												ul.products__desc-options
-													- var opsions = {'Тип SIM-карты' : "Micro-SIM", "Количество SIM-карт" : "1", "Цвет" : "Белый", "OC" : "Android", "Связь 3G" : "Есть", "4G (LTE)" : "Нет", "GPS-модуль" : "Есть"}
+													- var opsions = {'Тип SIM-карты:' : "Micro-SIM", "Количество SIM-карт:" : "1", "Цвет:" : "Белый", "OC:" : "Android", "Связь 3G:" : "Есть", "4G (LTE):" : "Нет", "GPS-модуль:" : "Есть"}
 													each value, key in opsions
-														li.products__option-item= key
-														li.product__option-valur= value
+														li.products__option-key= key
+														li.products__option-value= value
 												.products__rating
 													ul.products__rating-stars
 														li.products__rating-stars-item.produts__rating-stars-item_filled
