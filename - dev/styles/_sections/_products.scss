@@ -9,6 +9,7 @@
 }
 .products__item {
 	border-top: 2px solid $grey;
+	margin-bottom: 10px;
 
 	&:first-child {
 		border-top: 0 none;
@@ -106,6 +107,11 @@
 .products__desc-options{
 	margin-bottom: 14px;
 }
+.products__option-item {
+	background: transparent;
+	display: inline;
+}
+
 .products__option-key {
 	display: inline;
 	font-size: 14px;
@@ -194,4 +200,9 @@ $stars-map: sprite-map('icons/stars/*.png', $spacing: 70px);
 	}
 }
 
+/* --------- otehr views ------------ */
+
+@import "../_views/grid-view";
+
+@import "../_views/_line-view";
 
