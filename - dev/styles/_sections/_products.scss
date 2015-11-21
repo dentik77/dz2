@@ -202,7 +202,7 @@ $stars-map: sprite-map('icons/stars/*.png', $spacing: 70px);
 
 /* --------- otehr views ------------ */
 
-@import "../_views/grid-view";
+@import "../_views/_grid-view.scss";
 
-@import "../_views/_line-view";
+@import "../_views/_line-view.scss";
 
