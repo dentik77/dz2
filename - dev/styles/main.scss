@@ -26,6 +26,14 @@ $black: #333333;
 $orange: #ff6600;
 $grey: #e4ebee;
 
+/* ---------- plugins ----------- */
+
+@import "_plugins/_jquery-ui.scss";
+
+/* ---------- widgets ----------- */
+
+@import "_widgets/_slider.scss";
+
 /* ---------- section --------- */
 
 @import "_sections/_header.scss";
@@ -45,3 +53,6 @@ $grey: #e4ebee;
 @import "_sections/_products.scss";
 
 @import "_sections/_pagination.scss";
+
+
+

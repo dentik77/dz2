@@ -1,0 +1,6 @@
+.ul-slider-horizontal {
+	height: 3px;
+	background: $grey;
+	@include border-radius(0);
+	border: 0 none;
+}
